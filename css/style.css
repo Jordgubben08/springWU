@@ -1,0 +1,56 @@
+#wrapper {
+    width: 100 vw;
+    height: 150 vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+    'hd hd'
+    's1 s1'
+    's2 s2'
+    's3 s3'
+    'ft ft';
+}
+
+header {
+    grid-area: hd;
+    background-color: rgb(215, 123, 172);
+    height: 1 fr;
+}
+
+#button {
+    flex: bt;
+}
+
+/* Menyn som poppar upp effter att man tryckt på button
+nav {
+    grid-area: nv;
+    background-color: rgb(123, 209, 215); 
+}*/
+
+#sec1 {
+    grid-area: s1;
+    background-color: rgb(215, 204, 123);
+    height: 2 fr;
+}
+
+#sec2 {
+    grid-area: s2;
+    background-color: rgb(123, 152, 215);
+}
+
+#sec3 {
+    grid-area: s3;
+    background-color: rgb(215, 123, 128);
+    height: auto;
+}
+
+#sec4 {
+    grid-area: s4;
+    height: 2 fr;
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(123, 215, 213);
+    height: 1 fr;
+}
