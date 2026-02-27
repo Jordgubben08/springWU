@@ -1,36 +1,50 @@
 #wrapper {
     width: 100 vw;
-    height: 150 vh;
+    height: 250 vh;
     display: grid;
-    grid-template-columns: 30% 70%;
     grid-template-areas:
     'hd hd'
     's1 s1'
     's2 s2'
     's3 s3'
+    's4 s4'
     'ft ft';
+}
+
+body {
+    background-color: rgb(243, 169, 215); 
+}
+
+header, #sec1, #sec3, #sec2, #sec4, footer {
+    height: 50vh;
+    min-width: 96vw;
+    margin: 8px;
+    padding: 6px;
+    outline: solid black 2px; 
 }
 
 header {
     grid-area: hd;
     background-color: rgb(215, 123, 172);
-    height: 1 fr;
+    height: 100px;
+    display: flex; 
 }
 
 #button {
-    flex: bt;
+    width: 100px;
 }
 
-/* Menyn som poppar upp effter att man tryckt på button
+/* Menyn som poppar upp effter att man tryckt på button */
+
 nav {
-    grid-area: nv;
-    background-color: rgb(123, 209, 215); 
-}*/
+    background-color: rgb(123, 209, 215);
+    outline: solid black 2px; 
+}
 
 #sec1 {
     grid-area: s1;
     background-color: rgb(215, 204, 123);
-    height: 2 fr;
+    
 }
 
 #sec2 {
@@ -41,16 +55,14 @@ nav {
 #sec3 {
     grid-area: s3;
     background-color: rgb(215, 123, 128);
-    height: auto;
 }
 
 #sec4 {
     grid-area: s4;
-    height: 2 fr;
+    background-color:rgb(234, 169, 124);
 }
 
 footer {
     grid-area: ft;
     background-color: rgb(123, 215, 213);
-    height: 1 fr;
 }
