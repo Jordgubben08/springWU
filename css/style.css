@@ -1,3 +1,4 @@
+/* startsida */
 #wrapper {
     width: 100 vw;
     height: 250 vh;
@@ -15,54 +16,86 @@ body {
     background-color: rgb(243, 169, 215); 
 }
 
-header, #sec1, #sec3, #sec2, #sec4, footer {
-    height: 50vh;
-    min-width: 96vw;
-    margin: 8px;
-    padding: 6px;
+header, #sec1, #sec3, #sec4, footer {
     outline: solid black 2px; 
+    width: 95 vw;
 }
 
 header {
     grid-area: hd;
     background-color: rgb(215, 123, 172);
-    height: 100px;
+    height: 20vh;
+    min-height: 20vh;
     display: flex; 
+    padding: 10px;
+    margin: 10px;
 }
 
 #button {
-    width: 100px;
+    width: 80px;
 }
 
+h1 {
+    font-size: xx-large;
+}
 /* Menyn som poppar upp effter att man tryckt på button */
 
+h3 {
+    font-size: x-large;
+}
+
+h4 {
+    font-size: large;
+}
+
 nav {
-    background-color: rgb(123, 209, 215);
+    background-color: rgb(215, 123, 172);
     outline: solid black 2px; 
+    padding: 10px;
 }
 
 #sec1 {
     grid-area: s1;
-    background-color: rgb(215, 204, 123);
-    
+    background-color: rgb(215, 123, 172);
+    min-height: 35vh;
+    padding: 10px;
+    margin: 10px;
 }
 
 #sec2 {
     grid-area: s2;
-    background-color: rgb(123, 152, 215);
+    min-height: auto;
+    width: 95vw;
+    border: solid black 2px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+img {
+    width: 95vw;
 }
 
 #sec3 {
     grid-area: s3;
-    background-color: rgb(215, 123, 128);
+    background-color: rgb(215, 123, 172);
+    min-height: auto;
+    padding: 10px;
+    margin: 10px;
 }
 
 #sec4 {
     grid-area: s4;
-    background-color:rgb(234, 169, 124);
+    background-color: rgb(215, 123, 172);
+    min-height: 35vh; 
+    margin: 10px;
 }
 
 footer {
     grid-area: ft;
-    background-color: rgb(123, 215, 213);
+    background-color: rgb(215, 123, 172);
+    min-height: 35vh;
+    padding: 10px;
+    margin: 10px;
 }
+
+/* MOBILE */
