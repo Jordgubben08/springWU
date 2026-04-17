@@ -1,24 +1,16 @@
-/* startsida */
-
-body {
-    background-color: rgb(243, 169, 215); 
-    margin: 0;
-}
-
-header, #sec1, #sec3,#sec4, footer {
-    outline: solid black 2px; 
+/* gemensam */
+body{
+    margin:0;
 }
 
 header {
     grid-area: hd;
-    background-color: rgb(215, 123, 172);
     height: 20vh;
     min-height: 20vh;
     display: flex; 
     padding: 10px;
     margin: 10px;
-    justify-content: center;
-    Display: grid; 
+    justify-content: center; 
     grid-template-columns: 1fr 3fr;
 }
 
@@ -45,9 +37,8 @@ h4 {
 
 .menu-desktop{
     display:flex;
+    height: 15vh;
     grid-area: md;
-    background-color: rgb(215, 123, 172);
-    outline: solid black 2px; 
     padding: 10px;
     Margin: 10px;
     justify-content: space-around;
@@ -55,11 +46,9 @@ h4 {
 
 #sec1 {
     grid-area: s1;
-    background-color: rgb(215, 123, 172);
     min-height: 35vh;
     padding: 10px;
     margin: 10px;
-
 }
 
 #sec2 {
@@ -78,7 +67,6 @@ img {
 
 #sec3 {
     grid-area: s3;
-    background-color: rgb(215, 123, 172);
     min-height: auto;
     padding: 10px;
     margin: 10px;
@@ -86,7 +74,6 @@ img {
 
 #sec4 {
     grid-area: s4;
-    background-color: rgb(215, 123, 172);
     min-height: 35vh; 
     margin: 10px;
     padding: 10px;
@@ -94,12 +81,56 @@ img {
 
 footer {
     grid-area: ft;
-    background-color: rgb(215, 123, 172);
     min-height: 35vh;
     padding: 10px;
     margin: 10px;
 }
 
+.förstasidan-bakgrund {
+    background-color: rgb(243, 169, 215); 
+}
+
+.boxar-första{
+    background-color: rgb(215, 123, 172);
+    border: solid black 2px;
+}
+
+#sec5 {
+    grid-area: s5; 
+}
+#sec6 {
+    grid-area: s6;
+}
+#sec7{
+    grid-area: s7;
+}
+#sec8{
+    grid-area: s8;
+}
+#sec9{
+    grid-area: s9; 
+}
+#sec10{
+    grid-area: s10;
+}
+#sec11{
+    grid-area: s11;
+}
+#sec12{
+    grid-area: s12;
+}
+.andrasidan-bakgrund{
+    background-color: rgb(238, 191, 140); 
+}
+.andrasidan-boxar{
+    background-color: rgb(231, 132, 96); 
+    margin: 10px;
+    border: solid black 2px;
+    width: auto;
+    height: 25vh;
+}
+
+/* förstasida */
 /* Mobile */
 
 @media screen and (min-width: 200px) and (max-width:800px){
@@ -172,4 +203,22 @@ footer {
     'ft ft';
 }
 }
-/* slut av startsida */
+/* slut av förstasida */
+
+/* Andrasidan */ 
+/*MOBILE*/
+
+/*DESKTOP*/
+#andrasidan-wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd'
+    'md md md md'
+    's5 s6 s7 s8'
+    's9 s10 s11 s12'
+    'ft ft ft ft'
+    ;
+}
+/* Slut andrasidan */ 
