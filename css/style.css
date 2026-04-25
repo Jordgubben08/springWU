@@ -129,8 +129,29 @@ footer {
     width: auto;
     height: 25vh;
 }
+#sec13 {
+    grid-area: s13; 
+}
+#sec14 {
+    grid-area: s14;
+}
+#sec15 {
+    grid-area: s15;
+}
+#sec16 {
+    grid-area: s16;
+}
+.tredjesidan-bakgrund {
+    background-color:rgba(234, 145, 237, 0.925);
+}
+.boxar-tredje {
+    background-color:rgba(198, 98, 201, 0.925);
+    border: solid black 2px;
+    width: auto;
+    height: auto;
+}
 
-/* förstasida */
+
 /* Mobile */
 
 @media screen and (min-width: 200px) and (max-width:800px){
@@ -174,7 +195,36 @@ footer {
        left: 0vw; 
        display: block;
     }
+    #andrasidan-wrapper {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas:
+         'hd'
+        'md'
+        's5' 
+        's6'
+        's7'
+        's8'
+        's9' 
+        's10'
+        's11' 
+        's12'
+        'ft';
     }
+    #tredjesidan-wrapper {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        'hd'
+        's13'
+        's14'
+        's15'
+        's16'
+        'ft'
+    }
+}
 
 /* Desktop */
 
@@ -201,15 +251,8 @@ footer {
     's2 s1' 
     's4 s3'
     'ft ft';
-}
-}
-/* slut av förstasida */
-
-/* Andrasidan */ 
-/*MOBILE*/
-
-/*DESKTOP*/
-#andrasidan-wrapper {
+    }
+    #andrasidan-wrapper {
     width: 100%;
     height: auto;
     display: grid;
@@ -218,7 +261,17 @@ footer {
     'md md md md'
     's5 s6 s7 s8'
     's9 s10 s11 s12'
-    'ft ft ft ft'
-    ;
+    'ft ft ft ft';
+    }
+    #tredjesidan-wrapper {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        'hd hd hd'
+        'nv nv nv'
+        's13 s14 s14'
+        's15 s15 s16'
+        'ft ft ft'
+    }
 }
-/* Slut andrasidan */ 
